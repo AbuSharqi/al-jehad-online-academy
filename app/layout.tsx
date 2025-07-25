@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Al Hidaya Insitute",
-  description: "Transform Your Quran Recitation Today",
+  title: "Al Jehad Online Academy",
+  description: "Transform Your Online Presence Today",
 };
 
 export default function RootLayout({

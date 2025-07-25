@@ -2,7 +2,7 @@
 "use client";
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Moon, X, Menu } from 'lucide-react';
+import { BookOpen, X, Menu } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 //import { AuthentificationCheck } from '@/lib/auth-check';
 import { useRouter } from 'next/navigation';
@@ -15,8 +15,7 @@ export default function LandingNavbar() {
     //AuthentificationCheck({ setStatus: setUser });
 
     const navItems = [
-        { name: 'What We Offer', href: '#program' },
-        { name: 'Testimonials', href: '#testimonials' },
+        { name: 'What We Offer', href: '#learning-challenges' }
     ];
 
     return (
@@ -30,8 +29,8 @@ export default function LandingNavbar() {
                 <div className="flex items-center justify-between h-16" >
                     {/* Logo Section */}
                     < div className="flex items-center gap-2" >
-                        <Moon className="h-8 w-8 text-emerald-400" />
-                        <span className="text-2xl font-bold text-emerald-400" > Al Hidaya Institute </span>
+                        <BookOpen className="h-8 w-8 mt-1 text-emerald-400" />
+                        <span className="ml-4 text-2xl font-bold text-emerald-400" > Al Jehad Online Academy </span>
                     </div>
 
                     {/* Desktop Navigation */}
@@ -105,8 +104,8 @@ export default function LandingNavbar() {
                         <div className="px-4 pt-2 pb-3 space-y-4" >
                             <div className="flex items-center justify-between" >
                                 <div className="flex items-center gap-2" >
-                                    <Moon className="h-6 w-6 text-emerald-600" />
-                                    <span className="text-xl font-bold text-emerald-400" > Al Hidaya Institute </span>
+                                    <BookOpen className="h-6 w-6 text-emerald-600" />
+                                    <span className="text-xl font-bold text-emerald-400" > Al Jehad Online Academy </span>
                                 </div>
                                 < button
                                     onClick={() => setIsMenuOpen(false)}
