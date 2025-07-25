@@ -172,25 +172,6 @@ export default function HeroSection() {
                 <span className="text-sm text-emerald-700 dark:text-emerald-300 mb-2">Discover More</span>
                 <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
             </div>
-
-            <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
-        
-        .font-arabic {
-          font-family: 'Amiri', serif;
-        }
-        
-        @keyframes shine {
-          to {
-            background-position: 200% center;
-          }
-        }
-        
-        .animate-shine {
-          background-size: 200% auto;
-          animation: shine 2s linear infinite;
-        }
-      `}</style>
         </motion.section>
     )
 }

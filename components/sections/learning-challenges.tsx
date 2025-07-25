@@ -297,22 +297,6 @@ export default function LearningChallenges() {
                     </motion.div>
                 </motion.div>
             </div>
-
-            <style jsx global>{`
-        .font-arabic {
-          font-family: 'Amiri', serif;
-        }
-        
-        @keyframes float {
-          0% { transform: translateY(0px); }
-          50% { transform: translateY(-10px); }
-          100% { transform: translateY(0px); }
-        }
-        
-        .animate-float {
-          animation: float 4s ease-in-out infinite;
-        }
-      `}</style>
         </div>
     );
 }
