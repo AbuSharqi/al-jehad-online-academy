@@ -61,6 +61,18 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
+          
+ - name: Clear npm cache (if using npm)
+        if: steps.detect-package-manager.outputs.manager == 'npm'
+        run: npm cache clean --force
+
+      - name: Clear yarn cache (if using yarn)
+        if: steps.detect-package-manager.outputs.manager == 'yarn'
+        run: yarn cache clean
+
+      - name: Remove node_modules (to ensure fresh install)
+        run: rm -rf node_modules
+
       - name: Restore cache
         uses: actions/cache@v4
         with:
