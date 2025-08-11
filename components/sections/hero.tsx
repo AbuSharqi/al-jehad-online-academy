@@ -61,7 +61,7 @@ export default function HeroSection() {
                         transition={{ delay: 0.3 }}
                     >
                         <span className="block">Journey Through</span>
-                        <span className="text-amber-600 mt-2 inline-block">The World of Marketing</span>
+                        <span className="text-amber-600 mt-2 inline-block">The Divine Words of Quran</span>
                     </motion.h1>
 
                     {/* Arabic verse */}
@@ -71,11 +71,11 @@ export default function HeroSection() {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.4 }}
                     >
-                        <p className="text-3xl font-arabic mb-4 text-emerald-800 dark:text-emerald-200 leading-loose md:leading-normal">﴾ فَإِذَا قُضِيَتِ الصَّلَاةُ فَانْتَشِرُوا فِي الْأَرْضِ وَابْتَغُوا مِنْ فَضْلِ اللَّهِ﴿</p>
+                        <p className="text-5xl font-arabic mb-4 text-emerald-800 dark:text-emerald-200 leading-loose md:leading-normal">﴾ وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا ﴿</p>
                         <p className="text-lg text-emerald-700 dark:text-emerald-300 italic">
-                            "And when the prayer has been concluded, disperse within the land and seek from the bounty of Allāh..."
+                            "And recite the Quran with measured recitation"
                         </p>
-                        <p className="mt-2 text-slate-600 dark:text-slate-400">- Al-Jumu'ah (62:10)</p>
+                        <p className="mt-2 text-slate-600 dark:text-slate-400">- Al-Muzzammil (73:4)</p>
                     </motion.div>
 
                     <motion.p
@@ -84,7 +84,7 @@ export default function HeroSection() {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.5 }}
                     >
-                        Receive <span className="font-semibold underline decoration-sky-500">personalized guidance</span> from <span className="font-semibold underline decoration-sky-500">a certified instructor</span> to grow your audience and enhance your marketing skills.
+                        Receive <span className="font-semibold underline decoration-sky-500">personalized tajweed guidance</span> from <span className="font-semibold underline decoration-sky-500">a certified Qari</span> to perfect your recitation and deepen your understanding.
                     </motion.p>
 
                     {/* CTA Button */}
@@ -130,7 +130,7 @@ export default function HeroSection() {
                                         }
                                     }}>
                                     <span className="flex items-center relative z-10">
-                                        Grow Your Audience
+                                        Begin Your Quran Journey
                                         <motion.span
                                             className="ml-3"
                                             initial={{ x: 0 }}
@@ -152,16 +152,16 @@ export default function HeroSection() {
                         transition={{ delay: 0.7 }}
                     >
                         <div className="bg-white/80 dark:bg-slate-800/70 p-4 rounded-xl backdrop-blur-sm shadow-sm">
-                            <div className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">100%</div>
-                            <div className="text-slate-600 dark:text-slate-300">Halal</div>
+                            <div className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">10+</div>
+                            <div className="text-slate-600 dark:text-slate-300">Years Experience</div>
                         </div>
                         <div className="bg-white/80 dark:bg-slate-800/70 p-4 rounded-xl backdrop-blur-sm shadow-sm">
-                            <div className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">3+</div>
-                            <div className="text-slate-600 dark:text-slate-300">Courses</div>
+                            <div className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">Ijazah</div>
+                            <div className="text-slate-600 dark:text-slate-300">Certified</div>
                         </div>
                         <div className="bg-white/80 dark:bg-slate-800/70 p-4 rounded-xl backdrop-blur-sm shadow-sm">
-                            <div className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">5+</div>
-                            <div className="text-slate-600 dark:text-slate-300">Teaching Esesntials</div>
+                            <div className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">500+</div>
+                            <div className="text-slate-600 dark:text-slate-300">Students Taught</div>
                         </div>
                     </motion.div>
                 </div>

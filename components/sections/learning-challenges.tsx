@@ -1,15 +1,11 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
-    Clock, Frown, TrendingDown, RefreshCw, Lightbulb,
+    Clock, Frown, RefreshCw, Lightbulb,
     Rocket, Target, FastForward, MessageCircle, Award,
     Flag, Gauge, CheckCircle, Trophy, BarChart,
-    Book, User, Brain, ShieldAlert, Heart, BookOpen, ChevronRight, DollarSign, Crosshair, Hourglass, Compass,
-    ImageIcon,
-    Star,
-    Users,
-    ArrowRight,
-    Layers
+    Book, User, Brain, ShieldAlert, Heart, BookOpen, ChevronRight, Star,
+    Users, ArrowRight, Layers, BookText, House, GraduationCap, Microscope, Globe
 } from 'lucide-react';
 import { Button } from '../ui/button';
 import Link from 'next/link';
@@ -58,17 +54,17 @@ export default function LearningChallenges() {
     }, []);
 
     const struggleItems = [
-        { icon: <Clock className="w-5 h-5 text-amber-500" />, text: "Marketers often struggle with insufficient time to plan, execute, and analyze campaigns effectively" },
-        { icon: <Frown className="w-5 h-5 text-rose-400" />, text: "Facing constant pressure and the need for creativity can lead to exhaustion and a decrease in marketing drive" },
-        { icon: <TrendingDown className="w-5 h-5 text-orange-400" />, text: "Campaigns may underperform, showing a decline in key metrics like conversion rates or return on investment" },
-        { icon: <RefreshCw className="w-5 h-5 text-cyan-400" />, text: "The ever-evolving nature of digital platforms requires continuous adaptation, often forcing marketers to re-learn or restart strategies" },
-        { icon: <Lightbulb className="w-5 h-5 text-emerald-300" />, text: "Why 7 in 10 students abandon marketing their Facebook" }
+        { icon: <Clock className="w-5 h-5 text-amber-500" />, text: "Busy schedules make consistent Quran practice difficult to maintain" },
+        { icon: <Frown className="w-5 h-5 text-rose-400" />, text: "Frustration with proper pronunciation and tajweed rules" },
+        { icon: <BookText className="w-5 h-5 text-orange-400" />, text: "Difficulty understanding Arabic text without translation" },
+        { icon: <RefreshCw className="w-5 h-5 text-cyan-400" />, text: "Starting and stopping frequently leads to forgetting previous lessons" },
+        { icon: <Lightbulb className="w-5 h-5 text-emerald-300" />, text: "Why 7 in 10 students quit Quran learning within 6 months" }
     ];
 
     const solutionItems = [
-        { icon: <Rocket className="w-5 h-5 text-emerald-300" />, text: "This course will guide you towards earning a respectful income from home" },
-        { icon: <Target className="w-5 h-5 text-emerald-300" />, text: "Complete step-by-step training with practical guidance" },
-        { icon: <FastForward className="w-5 h-5 text-emerald-300" />, text: "Especially useful for religious scholars and students who want to earn honorable income" },
+        { icon: <Rocket className="w-5 h-5 text-emerald-300" />, text: "Personalized learning plans tailored to your schedule and goals" },
+        { icon: <Target className="w-5 h-5 text-emerald-300" />, text: "Step-by-step tajweed mastery with certified instructors" },
+        { icon: <FastForward className="w-5 h-5 text-emerald-300" />, text: "Accelerated learning techniques for faster progress" },
         { icon: <MessageCircle className="w-5 h-5 text-emerald-300" />, text: "Real-time feedback during actual recitation" },
         { icon: <Award className="w-5 h-5 text-amber-400" />, text: "90% complete Juz' Amma within first quarter" }
     ];
@@ -83,29 +79,29 @@ export default function LearningChallenges() {
 
     const commonProblems = [
         {
-            title: "Overly Promotional Content",
-            description: "People constantly push sales messages without offering any value, leading users to disengage and unfollow.",
+            title: "Inconsistent Practice",
+            description: "Without regular sessions, students struggle to retain tajweed rules and proper pronunciation.",
             icon: <Book className="w-6 h-6 text-emerald-500" />
         },
         {
-            title: "Ignoring Audience Insights and Targeting",
-            description: "Businesses fail to understand who they're trying to reach, resulting in wasted ad spend and poor results.",
-            icon: <Crosshair className="w-6 h-6 text-amber-500" />
+            title: "Lack of Personal Guidance",
+            description: "Generic lessons fail to address individual pronunciation challenges and learning pace.",
+            icon: <User className="w-6 h-6 text-amber-500" />
         },
         {
-            title: "Cognitive Overload",
-            description: "Inconsistent posting and a lack of interaction make a brand seem absent, causing a drop in audience interest and algorithmic visibility.",
-            icon: <Hourglass className="w-6 h-6 text-rose-500" />
+            title: "Arabic Comprehension",
+            description: "Students feel disconnected when they don't understand the meaning of verses they recite.",
+            icon: <Globe className="w-6 h-6 text-rose-500" />
         },
         {
             title: "Fear of Mistakes",
-            description: "Using low-quality or uninspired images and copy fails to capture attention on a visually driven platform.",
-            icon: <ImageIcon className="w-6 h-6 text-orange-500" />
+            description: "Anxiety about incorrect recitation prevents students from practicing confidently.",
+            icon: <ShieldAlert className="w-6 h-6 text-orange-500" />
         },
         {
             title: "Lack of Connection",
-            description: "Marketing efforts lack direction and measurable goals, making it impossible to track success or make improvements.",
-            icon: <Compass className="w-6 h-6 text-emerald-400" />
+            description: "Without understanding the context and beauty of verses, recitation feels mechanical.",
+            icon: <Heart className="w-6 h-6 text-emerald-400" />
         }
     ];
 
@@ -122,10 +118,10 @@ export default function LearningChallenges() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-emerald-100 mb-4">
-                        The <span className="text-amber-400">Real Challenges</span> in Online Marketing
+                        The <span className="text-amber-400">Real Challenges</span> in Learning Quran
                     </h2>
                     <p className="text-xl text-emerald-300 max-w-3xl mx-auto">
-                        Why common methods fail and how our approach creates lasting transformation
+                        Why traditional methods fail and how our approach creates lasting transformation
                     </p>
                 </motion.div>
 
@@ -173,16 +169,16 @@ export default function LearningChallenges() {
                         viewport={{ once: true }}
                     >
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                            Our <span className="text-emerald-600">Facebook Marketing</span> Solutions
+                            Our <span className="text-emerald-600">Quran Learning</span> Solutions
                         </h2>
                         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                            Here's exactly how we help you overcome your digital marketing challenges
+                            Here's exactly how we help you overcome your Quran learning challenges
                         </p>
                     </motion.div>
 
                     {/* Solutions Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {/* Solution 1 - Income from Home */}
+                        {/* Solution 1 - Personalized Guidance */}
                         <motion.div
                             className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-100 dark:border-gray-700"
                             initial={{ opacity: 0, y: 50 }}
@@ -192,24 +188,24 @@ export default function LearningChallenges() {
                         >
                             <div className="p-8">
                                 <div className="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 rounded-full flex items-center justify-center mb-6">
-                                    <DollarSign className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+                                    <User className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                                    Earn a Respectful Income from Home
+                                    One-on-One Guidance
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-400">
-                                    Our proven system guides you to generate halal income through Facebook marketing while maintaining your values and principles.
+                                    Personal sessions with certified Qaris who correct your tajweed and pronunciation in real-time.
                                 </p>
                             </div>
                             <div className="px-8 pb-6">
                                 <span className="inline-flex items-center gap-2 text-sm font-medium text-emerald-600 dark:text-emerald-400">
                                     <ArrowRight className="w-4 h-4" />
-                                    Start earning within weeks
+                                    Tailored to your learning pace
                                 </span>
                             </div>
                         </motion.div>
 
-                        {/* Solution 2 - Step-by-Step Training */}
+                        {/* Solution 2 - Step-by-Step Learning */}
                         <motion.div
                             className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-100 dark:border-gray-700"
                             initial={{ opacity: 0, y: 50 }}
@@ -222,21 +218,21 @@ export default function LearningChallenges() {
                                     <Layers className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                                    Complete Step-by-Step Training
+                                    Structured Tajweed Mastery
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-400">
-                                    From account setup to advanced strategies, we provide practical, actionable guidance at every stage of your Facebook marketing journey.
+                                    Progressive curriculum from basic letters to advanced recitation rules with practical exercises.
                                 </p>
                             </div>
                             <div className="px-8 pb-6">
                                 <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400">
                                     <CheckCircle className="w-4 h-4" />
-                                    No prior experience needed
+                                    Build strong foundations
                                 </span>
                             </div>
                         </motion.div>
 
-                        {/* Solution 3 - For Religious Scholars */}
+                        {/* Solution 3 - Meaningful Connection */}
                         <motion.div
                             className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-100 dark:border-gray-700"
                             initial={{ opacity: 0, y: 50 }}
@@ -249,16 +245,16 @@ export default function LearningChallenges() {
                                     <BookOpen className="w-6 h-6 text-amber-600 dark:text-amber-400" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                                    Ideal for Religious Scholars & Students
+                                    Understanding & Reflection
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-400">
-                                    Specifically designed for those seeking honorable income while continuing their Islamic studies or scholarly work.
+                                    Tafsir sessions that help you connect with the meaning and context of verses.
                                 </p>
                             </div>
                             <div className="px-8 pb-6">
                                 <span className="inline-flex items-center gap-2 text-sm font-medium text-amber-600 dark:text-amber-400">
-                                    <Users className="w-4 h-4" />
-                                    Trusted by 500+ students
+                                    <GraduationCap className="w-4 h-4" />
+                                    Deepen your spiritual connection
                                 </span>
                             </div>
                         </motion.div>
@@ -274,10 +270,10 @@ export default function LearningChallenges() {
                     >
                         <div className="bg-gradient-to-r from-emerald-50 to-blue-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-12 shadow-sm border border-gray-200 dark:border-gray-700">
                             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                                Ready to Transform Your Income Through Facebook?
+                                Ready to Begin Your Quran Journey?
                             </h3>
                             <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-                                Join our community of students who are already earning halal income while maintaining their Islamic values.
+                                Join hundreds of students who've transformed their relationship with the Quran through our proven methodology.
                             </p>
                             <Link
                                 href='#pricing'
@@ -290,7 +286,7 @@ export default function LearningChallenges() {
                                 }}
                             >
                                 <Button className="cursor-pointer bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-4 text-lg shadow-lg">
-                                    Enroll in the Course
+                                    Start Learning Today
                                 </Button>
                             </Link>
                         </div>
